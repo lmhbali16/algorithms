@@ -35,13 +35,16 @@ def one_away(word: str, edit: str) -> bool:
 		j += 1
 	if j < len(edit) and i >= len(word):
 		diff += 1
+	if i < len(word) and j >= len(edit):
+		diff += 1
+
 	if diff > 1:
 		return False
 
 
 	return True
 
-print(one_away("apple", "apple"))
+print(one_away("applD", "appb"))
 print(one_away("pale", "ple"))
 print(one_away("pales", "pale"))
 print(one_away("pale", "bale"))
