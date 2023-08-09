@@ -44,8 +44,49 @@ def one_away(word: str, edit: str) -> bool:
 
 	return True
 
-print(one_away("applD", "appb"))
-print(one_away("pale", "ple"))
-print(one_away("pales", "pale"))
-print(one_away("pale", "bale"))
+def one_edit_away(word: str, edit: str) -> bool:
+	edited = False
+
+	for i in range(len(word)):
+		if word[i] != edit[i]:
+			if edited:
+				return False
+
+			edited = True
+
+	return True
+
+def one_insert_away(longer: str, shorter: str) -> bool:
+	edited = False
+	j = 0
+
+	for i in longer:
+		if j >= len(shorter):
+			return True
+
+		if i != shorter[j]:
+			if edited:
+				return False
+
+			edited = True
+
+		else:
+			j += 1
+
+	return True
+
+def one_away2(word: str, edit: str) -> bool:
+	if len(word) == len(edit):
+		return one_edit_away(word, edit)
+	elif len(word) - len(edit) == 1:
+		return one_insert_away(word, edit)
+	elif len(word) - len(edit) == -1:
+		return one_insert_away(edit, word)
+	else:
+		return False
+
+print(one_away2("applD", "appb"))
+print(one_away2("pale", "ple"))
+print(one_away2("pales", "pale"))
+print(one_away2("pale", "bale"))
 print(one_away("pale", "bake"))
