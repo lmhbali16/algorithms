@@ -28,10 +28,28 @@ def rotate_matrix_clockwise(matrix: list) -> list:
 
 	return result
 
+def rotate_matrix_45(matrix: list) -> list:
+
+	result = []
+
+	for i in range(0, len(matrix)):
+
+		row = []
+		for j in range(len(matrix)-1, -1, -1):
+			row.append(matrix[j][i])
+		result.append(row)
+
+	return result
+
+
+			
+
 test = [[1,2,3,4,5], [6,7,8,9,10], [11,12,13,14,15], [16,17,18,19,20], [21,22,23,24,25]]
 print(test)
 print('\n')
-print(rotate_matrix(test))
+test_45 = rotate_matrix_45(test)
+print(test_45)
 print('\n')
-print(rotate_matrix_clockwise(test))
+test_90 = rotate_matrix_45(test_45)
+print(test_90)
 	
