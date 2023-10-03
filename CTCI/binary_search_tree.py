@@ -5,7 +5,7 @@ class Node:
 		self.leftChild = None
 		self.rightChild = None
 
-def binary_search_tree(sorted_list):
+def bst(sorted_list):
 	if len(sorted_list) == 1:
 		return Node(sorted_list[0])
 
@@ -18,12 +18,12 @@ def binary_search_tree(sorted_list):
 	middle = len(sorted_list) // 2
 
 	node = Node(sorted_list[middle])
-	node.leftChild = binary_search_tree(sorted_list[:middle])
-	node.rightChild = binary_search_tree(sorted_list[middle + 1:])
+	node.leftChild = bst(sorted_list[:middle])
+	node.rightChild = bst(sorted_list[middle + 1:])
 
 	return node
 
-node = binary_search_tree([1,2,3,4,6,7,8])
+node = bst([1,2,3,4,6,7,8])
 
 def show_binary_tree(node):
 	list_nodes = [node]
