@@ -39,6 +39,4 @@ def show_binary_tree(node):
 
 		list_nodes = list_nodes[1:]
 
-show_binary_tree(node)
-
-
+# show_binary_tree(node)
