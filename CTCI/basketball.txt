@@ -1,0 +1,19 @@
+probability of winning game 1 is p
+
+probability of winning game 2 is (making two shots and missing one in three different variation + making all 3 shots)
+
+p**2 (1-p) * 3 + p**3 = p**3 + 3p**2 - 3p**3 = 3p**2 - 2p**3
+
+if game 2 wins we want
+
+3p**2 - 2p**3 > p
+
+3p - 2p**2 - 1 > 0
+
+(1 - 2p)(p - 1) > 0
+
+p must be p < 1
+
+so (p - 1) < 0 and so (1 - 2p) < 0
+
+p must be > 0.5 to have (1 - 2p)(p - 1) > 0
