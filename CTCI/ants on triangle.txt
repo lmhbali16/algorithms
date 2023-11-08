@@ -1,0 +1,9 @@
+chance of collision is 1 - chance of non collision.
+
+chance of no collision is 1/2 * 1/2 * 1/2 * 2
+
+Because there is a 50% chance of each ants picking clockwise so there is a 1/8 chance of all ants picking clockwise direction. We multiply this by two because they could choose counter-clockwise direction and won't collide either.
+
+Therefore the formula is 
+
+1 - (1/2)**(n-1)

@@ -1,0 +1,7 @@
+first we fill the five-quart jug then pour the water to the 3-quart jug.
+
+So the 5-quart jug only has 2 quarts water in it.
+
+Empty the 3-quart jug and pour the 2 quarts of water from the 5-quart jug to the 3-quart jug.
+
+fill the 5-quart jug and using the water in the 5-quart jug fill the 3-quart jug with 1 quart of water so the 3-quart jug becomes full. That way, 4 quarts of water remains in the 5-quart jug

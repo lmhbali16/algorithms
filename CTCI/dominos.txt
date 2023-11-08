@@ -1,0 +1,3 @@
+This is not possible because dominos that cover two squares must cover a black and a white square on the chessboard.
+
+Since the two opposite corners that are cut off are either two black or two white. Therefore we can cover the first 60 squares (30 black and 30 white) with 30 dominos but there will be either 2 whites or two blacks left.
