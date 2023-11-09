@@ -1,0 +1,10 @@
+The number of days it takes to have all blue-eyed leave is the number of blue-eyed people.
+
+if there is one blue eyed people and I'm the one than I see everyone as non-blue-eyed and I can leave on the first day.
+
+
+if there are two blue-eyed people and I'm one of them, I will wait for the other blue-eyed to go home. If they don't go home, it means they are waited for me to go home on the first day so I know I have blue eye and I would go home with them on the second day.
+
+If there are 3 blue-eyed people and I'm one of them, I wait for two days and see if both of them leave. If they leave I know that they waited for one another and I don't have blue eyes. But because they didn't leave, waiting for me, I know that I have blue eyes on the 3rd day and I leave with them.
+
+That goes on and on.
